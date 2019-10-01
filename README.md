@@ -1,4 +1,3 @@
-#HTML#
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,26 +8,30 @@
     <body>
         
         <div class="text-title">
-            <h1>Hello</h1>
-            <p>This is my small project too learn html, css, git and JS(vannila)</p>
+            <h1>Chuck Noris joke maker</h1>
+            
         </div>
 
         <div class="text-grid">
         <div class="about-page">
-        <h3>What does this page do?</h3>
-            <p>it's a simple page that with every click displays a picture of superbeing Chuck Norris</p>
+        <h2>What does this page do?</h2>
+        <div>
+            <p>it's a simple page that with every click displays a joke about the superbeing known as <br> Chuck Norris</p>
+        </div>
+            
         </div>
         
         
        
         
         <div class="skill">
-                <h3>This is will show that I have foundational knowledge in the following:</h3>
+            
+                <h2>This website aims too prove that I am capable of using the following: </h2>
             <ul>
                 <li>CSS</li>
                 <li>HTML</li>
                 <li>JS</li>
-                <li>Git</li>
+                <li>API's</li>
             </ul>
         </div>
     </div>
@@ -36,20 +39,29 @@
     <img src="https://sophosnews.files.wordpress.com/2012/01/chuck-norris-thumb.jpg"/>
     </div>
         
-    <h4>Click here too display Chuck Noris joke</h4>
+    <h4>Click here too display Chuck Noris joke: </h4>
 
            
         <div id="chuck"></div>
  
-    <button id="buttonNoriss" type="button">
-        I want another one
-    </button>
             
+    <Container left>
+        <Container>
+          <Button  id="buttonNoriss">I want another one</Button>
+        </Container>
         <script src="indexJS.js"> </script>
     </body>
 </html>
 
-//JS
+
+
+
+
+
+
+
+
+
 
 function createNode(element) {
     return document.createElement(element)
@@ -92,30 +104,65 @@ document.addEventListener('DOMContentLoaded', (event) => {
        })
 }) 
 
-//CSS
 
 
-.text-title {
-    color: black;
-    text-align: center;
-    background-color: #FF851B;
+
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+html {
+  font-size: 18px;
+}
+
+html,
+body {
+ overflow-x: hidden;
+}
+
+body {
+  font-size: 1rem;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 
-
-
-.Chuck-box{
-    border: 5px solid green;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-  }
+.text-title {
+    font-family: sans-serif;
+    
+}
+.about-page ,
+.skill{
+  font-size: 15px;
+  font-family: sans-serif;
+}
 
 
 .text-grid{
-   
    margin-right: 220px;
    padding-right: 220px;
+   font-family: serif;
   }
+#buttonNoriss{
+  width: 100px;
+}
+body{
+  
+  margin-left: 100px;
+  margin-right: 100px;
+  
+  max-width: 1250px;
+  min-height: 969px;
+}
+
