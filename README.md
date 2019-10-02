@@ -5,3 +5,7 @@ This is a test code for a website, that shows that I have some base knowledge in
     - JS(API usage)
     - HTML
     - CSS
+
+
+API being used:
+    - https://api.chucknorris.io/
